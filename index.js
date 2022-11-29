@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", function (request, response) {
-    response.send("<h1>🙋‍♂️, Welcome to Mentor & Student Assigning API</h1> \n.<h4>This App contains the following endpoints :<h4> \n <h4>1) For Mentor : /mentor .</h4>\n<h4>1) For MentorbyName : /mentor/mentor_name .</h4>\n <h4>2) For Student: /student .</h4> \n <h4> For studentByName: /student/:student_name");
+    response.send("<h1>🙋‍♂️, Welcome to Mentor & Student Assigning API</h1> \n.<h4>This App contains the following endpoints :<h4> \n <h4>1) For Registering Student : /registerStudent .</h4>\n<h4>2) For registering Mentor : /registerMentor .</h4>\n <h4>3) For Assigning a Student to Mentor : /assignAStudent .</h4> \n <h4> 4)For updateStudent: /updateStudent </h4>\n <h4>5)For Students without Mentor: /studentWithoutMentor</h4> \n <h4>6)Mentor without Student: /mentorWithStudent</h4> \n <h4>7)List of Mentors assigned to Students : /getStudentList</h4> \n");
 });
 
 // Create Mentor
